@@ -50,6 +50,11 @@
 ### HW1_plotLCC.m **正軸等角圓錐投影**
 > ![Lambert Conformal Conic projection](https://user-images.githubusercontent.com/126145166/222165932-812935a3-60dc-475b-a5c1-d9adbe3ea774.jpg)
 
+### HW1_plotOM.m **斜軸麥卡托投影**
+> ![Oblique Mercator Projection](https://user-images.githubusercontent.com/28960431/222169463-d3012645-99df-4460-8002-cf40a9ae21f6.png)
+
+### HW1_plotUTM.m **通用橫軸麥卡托投影**
+>　![UMT](https://user-images.githubusercontent.com/28960431/222169764-761b11dc-e368-4ecc-b9ac-f50d2c483b97.png)
 
 ## layer01.dat
 * 數據範圍：(118, 18)~(124, 26)
