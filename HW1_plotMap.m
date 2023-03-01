@@ -12,3 +12,5 @@ m_grid('box','fancy');
 
 ax=m_contfbar(.97,[.5 .9],[-6000 0],[-6000:100:000],'edgecolor','none','endpiece','no');
 xlabel(ax,'meters','color','k');
+
+title('D/A hw1-Taiwan bathymetric')
