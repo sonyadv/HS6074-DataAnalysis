@@ -1,3 +1,4 @@
+clc; clear; fclose all; close all;
 m_proj('lambert','lat',[20 26],'long',[118 125]);
 
 set(gcf,'color','w')   % Set background colour before m_image call
