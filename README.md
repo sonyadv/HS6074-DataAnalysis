@@ -61,10 +61,8 @@
 * 解析度比較差
 * 預處理過，可以直接跑
 
-### 繪圖
-> HW1_plotLayer01.m
-
- ![Layer01](https://user-images.githubusercontent.com/28960431/222131023-61233794-2374-4111-ad53-4d01a66490c6.png)
+###  HW1_plotLayer01.m
+> ![Layer01](https://user-images.githubusercontent.com/28960431/222131023-61233794-2374-4111-ad53-4d01a66490c6.png)
 
 ## Taipd200m.xyz
   * (119.036, 21) ~ (123, 26)
