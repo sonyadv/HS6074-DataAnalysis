@@ -1,15 +1,14 @@
 # HS6074 DataAnalysis
 就是資料分析ㄉ檔案存放區
-* Matlab版本: R2022a
+* Sonya ㄉ Matlab 版本：R2022a
+* Nanli ㄉ Matlab 版本：R2020b
 
----
 ## HW1
-### 台灣海底地形圖
-* Taipd200m.xyz
-  * (119.036, 21) ~ (123, 26)
-  * 應該是解析度200公尺(?)，不太確定
-  * 檔案很大！（長 X 寬 = 2001 x 2501 = 5004501）
-* layer01.dat
-  * (118, 18)~(124, 26)
-  * 解析度比較差
-  * 預處理過，可以直接跑
+![image](https://user-images.githubusercontent.com/28960431/222137148-ca7659ca-d32a-4311-ade8-c1a77287c02c.png)
+
+Plot the following data defined by the three functions, and discuss their periodicity:
+
+Data Visualization 
+* [ ] Download ‘M_maps’ from web and draw the bathymetric map around Taiwan Island.
+* [ ] Try to plot this map using finest resolution dataset with various projection setting.
+* [ ] Check the content of ‘Codar_data.zip’
