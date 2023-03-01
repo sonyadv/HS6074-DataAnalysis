@@ -6,7 +6,7 @@
 2. 將 `m_map` 解壓縮至本機磁碟的 `Program Files\MATLAB\R2022a\toolbox`
 3. 於 Matlab > Home > Environment > Set path > Add folder 加入 `m_map` 並儲存
 4. 於 [Example Code](https://www.eoas.ubc.ca/~rich/map.html#examples)  取得 `17. Shaded Relief (Example 1)`
-   此時執行會出現 `etopo2.m` 之 warning，故需下載高解析度的海底地形數據與海岸線數據
+   > 此時執行會出現 `etopo2.m` 之 warning，故需下載高解析度的海底地形數據與海岸線數據
  
 ### etopo2 與 coastline 安裝
 1. 下載[海岸線](https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html)
@@ -35,25 +35,13 @@
        > 如果修改 `m_etopo2.m` 時跳出無法儲存的訊息，可以開一個新的 `.m` 檔並把 `m_etopo2.m` 的內容複製過去，在本機磁碟外的地方編輯完後，把原本的 `m_etopo2.m` 覆蓋掉就可以啦 :D
  
  3. 醬就好啦！
-    保險起見可以再做一次 Add Path 的動作，確保現在讀到的 m_map 是更新後的
-    現在就可以成功跑出高解析度ㄉ `Shaded Relief` ㄌ！
+    > 保險起見可以再做一次 Add Path 的動作，確保現在讀到的 m_map 是更新後的。現在就可以成功跑出高解析度ㄉ `Shaded Relief` ㄌ！
  
  ### 繪圖
- ```python
-    m_proj('lambert','lat',[20 26],'long',[118 125]);
-    
-    set(gcf,'color','w')   % Set background colour before m_image call
-    caxis([-6000 0]);
-    colormap(flipud([flipud(m_colmap('blues',10));m_colmap('jet',118)]));
-    m_etopo2('shadedrelief','gradient',3);
-    m_gshhs_i('patch',[.8 .8 .8]);
-    m_grid('box','fancy');
+> HW1_plotMap.m
 
-    ax=m_contfbar(.97,[.5 .9],[-6000 0],[-6000:100:000],'edgecolor','none','endpiece','no');
-    xlabel(ax,'meters','color','k');
- ```
- 
-![map_test](https://user-images.githubusercontent.com/28960431/222130387-d7cd6fc4-12f1-4195-bdc2-a40984336bdb.png)
+ ![map_test](https://user-images.githubusercontent.com/28960431/222130387-d7cd6fc4-12f1-4195-bdc2-a40984336bdb.png)
+
 
 ## layer01.dat
 * 數據範圍：(118, 18)~(124, 26)
@@ -61,9 +49,9 @@
 * 預處理過，可以直接跑
 
 ## 繪圖
-![Layer01](https://user-images.githubusercontent.com/28960431/222131023-61233794-2374-4111-ad53-4d01a66490c6.png)
+> HW1_plotLayer01.m
 
-> 
+ ![Layer01](https://user-images.githubusercontent.com/28960431/222131023-61233794-2374-4111-ad53-4d01a66490c6.png)
 
 ## Taipd200m.xyz
   * (119.036, 21) ~ (123, 26)
