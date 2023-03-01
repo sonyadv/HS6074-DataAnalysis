@@ -59,6 +59,7 @@
 ### HW1_plotMiller.m **米勒圓柱投影**
 > ![miller projection](https://user-images.githubusercontent.com/126145166/222170860-81f5564f-3831-4848-a1d8-48ea21bac349.jpg)
 
+> 參考資料：https://www.eoas.ubc.ca/~rich/map.html#examples
 
 ## layer01.dat
 * 數據範圍：(118, 18)~(124, 26)
