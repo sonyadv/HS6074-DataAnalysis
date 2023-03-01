@@ -37,14 +37,16 @@
  3. 醬就好啦！
     > 保險起見可以再做一次 Add Path 的動作，確保現在讀到的 m_map 是更新後的。現在就可以成功跑出高解析度ㄉ `Shaded Relief` ㄌ！
  
-### 繪圖
-> HW1_plotMap.m
-
+### HW1_plotSF.m **地貌暈渲圖**
 > ![map1](https://user-images.githubusercontent.com/28960431/222152913-4a2ac5d5-90d1-407b-869d-0f87a41e4e98.png)
 > by Sonya
 
 > ![image](https://user-images.githubusercontent.com/126145166/222143598-46c7dac2-6007-433f-88ba-23ff27373e85.jpg)
 > by Nanzulo
+
+### HW1_plotLC.m **等角投影**
+> ![Lambert Conformal Projection](https://user-images.githubusercontent.com/28960431/222158380-58796fa1-ced9-46ab-9ae0-785f75510003.png)
+
 
 ## layer01.dat
 * 數據範圍：(118, 18)~(124, 26)
