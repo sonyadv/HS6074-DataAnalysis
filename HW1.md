@@ -40,8 +40,7 @@
  ### 繪圖
 > HW1_plotMap.m
 
- ![map_test](https://user-images.githubusercontent.com/28960431/222130387-d7cd6fc4-12f1-4195-bdc2-a40984336bdb.png)
-
+![image](https://user-images.githubusercontent.com/28960431/222141551-0f68ae6a-cad0-4033-b65b-f05c222c56e9.png)
 
 ## layer01.dat
 * 數據範圍：(118, 18)~(124, 26)
