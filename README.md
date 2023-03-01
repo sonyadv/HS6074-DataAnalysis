@@ -13,4 +13,5 @@
 ### Data Visualization 
 * [x] Download ‘M_maps’ from web and draw the bathymetric map around Taiwan Island.
 * [ ] Try to plot this map using finest resolution dataset with various projection setting.
-* [ ] Check the content of ‘Codar_data.zip’
+* [x] Check the content of ‘Codar_data.zip’
+      好像是[這個](https://www.tori.narl.org.tw/TORI_WEB/CTORI/Data_Application/Codar/)
