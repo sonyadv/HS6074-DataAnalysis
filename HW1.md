@@ -22,7 +22,7 @@
        故將 GSHHG data 解壓縮至 `m_gshhs.m` 所在的資料夾中的 `data` 資料夾即可，不須修改 `m_gshhs.m` 的內容
 
 2. 下載[etopo2](https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/ice_surface/grid_registered/binary/)
-    1. 下載 `etopo1_ice_g_i2.zip`
+    1. 下載 `etopo1_ice_g_i2.zip` 並解壓縮到 `m_map` 中
     2. 於 `m_etopo2.m` 中可以看到
        ```
        %%% This will have to be set by YOU the USER! ---------------------
