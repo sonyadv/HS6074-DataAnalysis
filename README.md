@@ -56,6 +56,10 @@
 ### HW1_plotUTM.m **通用橫軸麥卡托投影**
 >　![UMT](https://user-images.githubusercontent.com/28960431/222169764-761b11dc-e368-4ecc-b9ac-f50d2c483b97.png)
 
+### HW1_plotMiller.m **米勒圓柱投影**
+> ![miller projection](https://user-images.githubusercontent.com/126145166/222170860-81f5564f-3831-4848-a1d8-48ea21bac349.jpg)
+
+
 ## layer01.dat
 * 數據範圍：(118, 18)~(124, 26)
 * 解析度比較差
