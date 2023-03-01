@@ -47,7 +47,7 @@
 ### HW1_plotLC.m **等角投影**
 > ![Lambert Conformal Projection](https://user-images.githubusercontent.com/28960431/222158380-58796fa1-ced9-46ab-9ae0-785f75510003.png)
 
-### Lambert Conformal Conic projection **正軸等角圓錐投影**
+### HW1_plotLCC.m **正軸等角圓錐投影**
 > ![Lambert Conformal Conic projection](https://user-images.githubusercontent.com/126145166/222165932-812935a3-60dc-475b-a5c1-d9adbe3ea774.jpg)
 
 
