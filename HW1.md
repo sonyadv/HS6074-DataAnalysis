@@ -37,7 +37,7 @@
  3. 醬就好啦！
     > 保險起見可以再做一次 Add Path 的動作，確保現在讀到的 m_map 是更新後的。現在就可以成功跑出高解析度ㄉ `Shaded Relief` ㄌ！
  
- ### 繪圖
+### 繪圖
 > HW1_plotMap.m
 
 > ![image](https://user-images.githubusercontent.com/28960431/222141551-0f68ae6a-cad0-4033-b65b-f05c222c56e9.png) 
@@ -51,7 +51,7 @@
 * 解析度比較差
 * 預處理過，可以直接跑
 
-## 繪圖
+### 繪圖
 > HW1_plotLayer01.m
 
  ![Layer01](https://user-images.githubusercontent.com/28960431/222131023-61233794-2374-4111-ad53-4d01a66490c6.png)
