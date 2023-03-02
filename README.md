@@ -8,6 +8,7 @@
 4. 於 [Example Code](https://www.eoas.ubc.ca/~rich/map.html#examples)  取得 `17. Shaded Relief (Example 1)`
 
    > 此時執行會出現 `etopo2.m` 之 warning，故需下載高解析度的海底地形數據與海岸線數據，如果沒有下載任何 etopo 的話畫出來的圖會長這樣
+  
    > ![org](https://user-images.githubusercontent.com/28960431/222408041-e9a1badf-5ccb-4c5f-b595-962067b8f726.jpg)
  
 ### etopo1 與 coastline 安裝
@@ -24,7 +25,7 @@
        故將 GSHHG data 解壓縮至 `m_gshhs.m` 所在的資料夾中的 `data` 資料夾即可，不須修改 `m_gshhs.m` 的內容
 
 2. **下載[etopo1](https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/ice_surface/grid_registered/binary/)**
-    > 重新查詢後發現我誤解了`m_map`的地形檔差別，`m_map`中自帶的地形檔解析度為 **1°**，所以不論是下載 etopo1 還是 etopo2 都比`m_map`自帶的解析度好，而`m_map`建議的檔案為 etopo2v2 ，此處設定參考 [Matlab下地形圖繪圖包m_map安裝與使用](https://blog.csdn.net/weixin_39509073/article/details/113247019) ，選用 etopo1。另外 Matlab 本身也有 [etopo](https://www.mathworks.com/help/map/ref/etopo.html) 的函數，不過上面的資訊大多比較舊。
+    > 重新查詢後發現我誤解了`m_map`的地形檔差別，`m_map`中自帶的地形檔解析度為 **1°**，所以不論是下載 etopo1 還是 etopo2 都比`m_map`自帶的解析度好，而`m_map`建議的檔案為 etopo2v2 ，此處設定參考 [Matlab下地形圖繪圖包m_map安裝與使用](https://blog.csdn.net/weixin_39509073/article/details/113247019) ，選用 etopo1。另外 Matlab 本身也有 [etopo](https://www.mathworks.com/help/map/ref/etopo.html) 的函數，裡面有不同解析度與檔案格式的說明。
 
     1. 下載 `etopo1_ice_g_i2.zip` 並解壓縮到 `m_map` 中
     2. 於 `m_etopo2.m` 中可以看到
