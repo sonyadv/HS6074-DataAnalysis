@@ -39,10 +39,10 @@
  
 ### HW1_plotSF.m **地貌暈渲圖**
 > ![map1](https://user-images.githubusercontent.com/28960431/222152913-4a2ac5d5-90d1-407b-869d-0f87a41e4e98.png)
-> by Sonya
+> by 王硯葶
 
 > ![image](https://user-images.githubusercontent.com/126145166/222143598-46c7dac2-6007-433f-88ba-23ff27373e85.jpg)
-> by Nanzulo
+> by 柯亞岑
 
 ### HW1_plotLC.m **等角投影**
 > ![Lambert Conformal Projection](https://user-images.githubusercontent.com/28960431/222171211-237738f2-580a-419f-b072-0ff61f970541.png)
