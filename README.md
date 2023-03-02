@@ -1,7 +1,6 @@
 # HS6074 DataAnalysis
 就是資料分析ㄉ檔案存放區
-* Sonya ㄉ Matlab 版本：R2022a
-* Nanli ㄉ Matlab 版本：R2020b
+* Matlab 版本：R2022a／R2020b
 
 ## HW1
 
