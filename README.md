@@ -87,5 +87,14 @@
 7. **reverse前的圖**
    ![untitled](https://user-images.githubusercontent.com/126145166/223707267-3e0247b7-1f7e-4002-ba96-01d1bc1af382.jpg)
 
+## Codar 
+1. 解釋codar的format
+    * 標題: 時間stamp
+    * 格式: 經緯度, 速度分量
+2. quiver(x,y,u,v)
+3. 畫圖
 
-   
+   ![r600 TOTL_ALLM_2014_12_01_0000 tuv](https://user-images.githubusercontent.com/28960431/223731897-750df5b9-5cf0-4265-be40-d2390310d627.png)
+
+4. 有空的話可以畫gif
+
