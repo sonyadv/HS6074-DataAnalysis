@@ -15,7 +15,7 @@
 * [x] Check the content of ‘Codar_data.zip’
 
 ## HW2
-### Tapid200m.xyz
+### Taipd200m.xyz
 * [x] perp-processing
 * [x] plot
 * [ ] plot with etopo1
