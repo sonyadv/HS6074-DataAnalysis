@@ -92,8 +92,21 @@
 1. 解釋codar的format
     * 標題: 時間stamp
     * 格式: 經緯度, 速度分量(cm/s)
+    ![圖片1](https://user-images.githubusercontent.com/126145166/223771567-7f381ea1-2171-4166-bfaf-c656c04d1d72.jpg)
+
 2. quiver(x,y,u,v)
-3. 畫圖 (12月ㄉ每一張)
+    ```
+    fn=['TOTL_ALLM_2014_' sprintf('%02d',month) '_' sprintf('%02d',day) '_' sprintf('%02d',hour) '00' '.tuv']
+    q = load(fn);
+        
+    X = q(:,1);
+    Y = q(:,2);
+    U = q(:,3);
+    V = q(:,4);
+        
+    quiver(X,Y,U,V)
+    ```
+4. 畫圖 (先跑某一天24張)
 
    ![r600 TOTL_ALLM_2014_12_01_0000 tuv](https://user-images.githubusercontent.com/28960431/223731897-750df5b9-5cf0-4265-be40-d2390310d627.png)
 
