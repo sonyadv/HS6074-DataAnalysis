@@ -1,7 +1,7 @@
 clc; clear; fclose all; close all;
 
-lx=dlmread('layer02_x.dat');  %先到COMCOT跑要的網格大小及地形範圍
-ly=dlmread('layer02_y.dat');  %把得到後的資料變成真實的經緯度範圍
+lx=dlmread('layer02_x.dat');
+ly=dlmread('layer02_y.dat');
 lz=dlmread('layer02.dat');
 [lon,lan]=meshgrid(lx,ly);
 depth=reshape(lz,length(lx),length(ly)); % 水深
@@ -13,8 +13,9 @@ colormap([flipud(m_colmap('blue',5850)); m_colmap('blues',150); flipud(m_colmap(
 shading flat; axis image;
 
 hold on
-contour(lon,lan,depth,[0 0],'k','linewidth',1.3)   %畫海岸線 
+contour(lon,lan,depth,[0 0],'k','linewidth',1.3)
 box on; grid on; set(gca, 'layer', 'top');
+
 hcb = colorbar;
 set(get(hcb,'Ylabel'),'String','Elevation (m)');
 xlabel('Longitude'); ylabel('Latitude');
