@@ -13,3 +13,11 @@
 * [x] Download ‘M_maps’ from web and draw the bathymetric map around Taiwan Island.
 * [x] Try to plot this map using finest resolution dataset with various projection setting.
 * [x] Check the content of ‘Codar_data.zip’
+
+## HW2
+### Tapid200m.xyz
+* [x] perp-processing
+* [x] plot
+* [ ] plot with etopo1
+
+###  Codar_data
