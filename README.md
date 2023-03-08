@@ -91,7 +91,7 @@
 ## Codar 
 1. 解釋codar的format
     * 標題: 時間stamp
-    * 格式: 經緯度, 速度分量
+    * 格式: 經緯度, 速度分量(cm/s)
 2. quiver(x,y,u,v)
 3. 畫圖 (12月ㄉ每一張)
 
