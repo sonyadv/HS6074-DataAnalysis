@@ -26,6 +26,15 @@
    
   處理好的資料我已經丟在 release，HW2那邊有一個layer02.zip，直接下載就是可以拿去 Matlab 用的數據ㄌ
 
+3.**後來有用matlab作出前處理ㄌ**
+   
+
+    % reshape 1-dim arrays into 2-dim martix
+    lon = reshape(lx,2001,2501);
+    lan = reshape(ly,2001,2501);
+    depth = reshape(lz,2001,2501);
+    
+
 ### 繪圖 HW2_plotTaipd200m.m
 
 1. **讀入檔案**
