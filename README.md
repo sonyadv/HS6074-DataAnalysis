@@ -24,7 +24,7 @@
 * [x] plot
 
 ## HW3
-### ocean current analysis(22.5~23°N,120~120.5°E)
+### ocean current analysis(22.5-23°N,120-120.5°E)
 * [ ] statistics variables(ex. range, IQR...)
 * [ ] tide period
 
