@@ -1,33 +1,47 @@
 clc; clear; fclose all; close all;
 
-lx=dlmread('layer02_x.dat');  %先到COMCOT跑要的網格大小及地形範圍
-ly=dlmread('layer02_y.dat');  %把得到後的資料變成真實的經緯度範圍
-lz=dlmread('layer02.dat');
-[lon,lan]=meshgrid(lx,ly);
-depth=reshape(lz,length(lx),length(ly)); % 水深
-depth= -depth';   
+%% init
+% read the .xyz file and seprate into three array: lx, ly, lz
+taipd = load('Taidp200m.xyz');
+lx = taipd(:,1);
+ly = taipd(:,2);
+lz = taipd(:,3);
 
+% reshape 1-dim arrays into 2-dim martix
+lon = reshape(lx,2001,2501);
+lan = reshape(ly,2001,2501);
+depth = reshape(lz,2001,2501);
+
+% load colormap
+load('Taiwan.mat');
+
+%% plot codar data
 cd('codar_data')
-hold on
 
+count = 1
 month = 12;
-for day = 1:11
+for day = 1:1
     for hour = 0:23
         figure((day-1)*24+hour+1)
-        pcolor(lon,lan,depth); %畫地形
+
+        % plot etopo1
+        m_proj('UTM','long',[118 125],'lat',[20 26]);
         caxis([-6000 4000]);
-        colormap([flipud(m_colmap('blue',5850)); m_colmap('blues',150); flipud(m_colmap('green',4000))]);
+        colormap(TWcolor);
+        m_etopo2('pcolor');
         shading flat; axis image;
-
+        m_gshhs_i('color','k');
+        hold on
+        
+        % plot the bathmetry by m_pcolor
+        m_pcolor(lon,lan,depth);
+        caxis([-6000 4000]);
+        colormap(TWcolor);
+        m_gshhs_i('color','k');
+        shading flat; axis image;
         hold on
 
-        contour(lon,lan,depth,[0 0],'k','linewidth',1.3)   %畫海岸線    
-        box on; grid on; set(gca, 'layer', 'top');
-        hcb = colorbar;
-        set(get(hcb,'Ylabel'),'String','Elevation (m)');
-
-        hold on
-
+        % codar data
         fn=['TOTL_ALLM_2014_' sprintf('%02d',month) '_' sprintf('%02d',day) '_' sprintf('%02d',hour) '00' '.tuv']
         q = load(fn);
         
@@ -42,6 +56,18 @@ for day = 1:11
         xlabel('Longitude'); ylabel('Latitude');
         title([sprintf('%02d',month) '/' sprintf('%02d',day) ' ' sprintf('%02d',hour) ':00'])
         print(['r600.' fn '.png'],'-dpng','-r600');
+
+        A600=imread([fn '.png']);
+        [I600,map600]=rgb2ind(A600,256);
+        
+        % create gif
+        if(count==1)
+          imwrite(I600,map600,['TOTL_ALLM.gif'],'DelayTime',0.6,'LoopCount',Inf);
+        else
+            imwrite(I600,map600,['TOTL_ALLM.gif'],'WriteMode','append','DelayTime',0.6);
+        end
+
+        count = count + 1;
+
     end
 end
-
