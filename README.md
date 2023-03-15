@@ -100,6 +100,7 @@
 ## Taipd + Etopo1
 0. **Colormap 建立**
    > 反正就是用 colormap editor 慢慢調參數，就不贅述了
+   
    載入建立好的colormap `load('Taiwan.mat');`
    
 1. **繪製 etopo1**
