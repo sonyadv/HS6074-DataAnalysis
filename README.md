@@ -98,11 +98,11 @@
    ![untitled](https://user-images.githubusercontent.com/126145166/223707267-3e0247b7-1f7e-4002-ba96-01d1bc1af382.jpg)
 
 ## Taipd + Etopo1
-0. Colormap 建立
+0. **Colormap 建立**
    > 反正就是用 colormap editor 慢慢調參數，就不贅述了
    載入建立好的colormap `load('Taiwan.mat');`
    
-1. 繪製 etopo1 
+1. **繪製 etopo1**
 
     ```
     m_proj('UTM','long',[118 125],'lat',[20 26]);
@@ -114,7 +114,7 @@
     hold on
     ```
 
-2. 繪製 Taipd200m
+2. **繪製 Taipd200m**
     
     ```
     m_pcolor(lon,lan,depth);
@@ -128,7 +128,7 @@
 
 3. **成果**
 
-![untitled1](https://user-images.githubusercontent.com/28960431/225305767-dff62205-2d64-4922-a1a8-23a92414593a.png)
+    ![untitled1](https://user-images.githubusercontent.com/28960431/225305767-dff62205-2d64-4922-a1a8-23a92414593a.png)
 
 
 ## Codar 
