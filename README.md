@@ -18,7 +18,7 @@
 ### Taipd200m.xyz
 * [x] perp-processing
 * [x] plot
-* [ ] plot with etopo1
+* [] plot with etopo1
 
 ###  Codar_data
 * [x] plot
