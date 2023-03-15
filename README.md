@@ -97,6 +97,40 @@
 
    ![untitled](https://user-images.githubusercontent.com/126145166/223707267-3e0247b7-1f7e-4002-ba96-01d1bc1af382.jpg)
 
+## Taipd + Etopo1
+0. Colormap 建立
+   > 反正就是用 colormap editor 慢慢調參數，就不贅述了
+   載入建立好的colormap `load('Taiwan.mat');`
+   
+1. 繪製 etopo1 
+
+    ```
+    m_proj('UTM','long',[118 125],'lat',[20 26]);
+    caxis([-6000 4000]);
+    colormap(TWcolor);
+    m_etopo2('pcolor');
+    shading flat; axis image;
+    m_gshhs_i('color','k');
+    hold on
+    ```
+
+2. 繪製 Taipd200m
+    
+    ```
+    m_pcolor(lon,lan,depth);
+    caxis([-6000 4000]);
+    colormap(TWcolor);
+    m_gshhs_i('color','k');
+    shading flat; axis image;
+    hold on
+    ```
+    跟前面的差別就只有把`pcolor`換成`m_pcolor`，才能在`m_proj`上畫圖。
+
+3. **成果**
+
+![untitled1](https://user-images.githubusercontent.com/28960431/225305767-dff62205-2d64-4922-a1a8-23a92414593a.png)
+
+
 ## Codar 
 1. **codar_data format**
     * 自2014年9月15日至2014年12月11日每小時一筆
