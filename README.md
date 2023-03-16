@@ -69,3 +69,4 @@ box要宣告在hour外，每天重新宣告box比較不會佔記憶體空間。
 
 ![TOTL_ALLM_2014_12_01](https://user-images.githubusercontent.com/28960431/225395424-bdd00c0e-3df1-4689-a806-daecd6464a23.png)
 
+可以看到有明顯2個波峰波谷，與高雄半日潮可能有關
