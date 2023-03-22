@@ -24,5 +24,16 @@
 
 ## HW3
 ### ocean current analysis(22.5-23°N,120-120.5°E)
-* [ ] statistics variables(ex. range, IQR...)
-* [ ] tide period
+* [x] statistics variables(ex. range, IQR...)
+* [x] tide period
+
+## HW4
+### ocean current analysis
+* [ ] 22.5-24°N,120-120.5°E(西岸、近岸)
+* [ ] 22.5-24°N,119.5-120°E(西岸、遠岸)
+* [ ] 22.5-24°N,121-121.5°E(東岸、近岸)
+* [ ] 22.5-24°N,121.5-122°E(東岸、遠岸)
+
+
+
+
