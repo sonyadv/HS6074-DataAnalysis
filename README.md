@@ -14,7 +14,6 @@
 
 ## 潮汐圖
 > 感覺可以畫日平均的速度圖，能看出季節或區域差異
-> 氣象局的潮汐觀測圖(2014)
 
 > [潮汐年報（共113頁，流量預警）](https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.cwb.gov.tw/Data/service/notice/download/publish_20140428143540.pdf&ved=2ahUKEwij6O_dgvD9AhVFT2wGHRdjDUMQFnoECB4QAQ&usg=AOvVaw28iUl8QPylxVD8O19lQDhV)
 
