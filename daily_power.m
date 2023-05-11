@@ -23,8 +23,9 @@ cd('codar_data')
 
 %% plot codar data
 for month = 12:12
-    for day = 1:5
-            
+    for day = 6:11
+    
+    %% initialize
     % set up the grid
     x = 118.5:0.1:123.5;
     y = 21:0.1:26.5;
@@ -59,22 +60,22 @@ for month = 12:12
             [len c] = size(lon);
             [ly lx] = size(X);
 
-			      for i = 1:len
+			for i = 1:len
                 r=0; c=0;
 
-				       % find lon
-				       for j = 1:lx-1
-               		 if lon(i)>=x(j) && lon(i)<=x(j+1)
-					             c = j;
-                  end
-               end
+			     % find lon
+				for j = 1:lx-1
+               		if lon(i)>=x(j) && lon(i)<=x(j+1)
+					    c = j;
+                    end
+                end
 
 				       % find lat
-				       for j = 1:ly-1
-                		if lat(i)>=y(j) && lat(i)<=y(j+1)
-                       r = j;
-                   end
-               end
+			    for j = 1:ly-1
+                    if lat(i)>=y(j) && lat(i)<=y(j+1)
+                        r = j;
+                    end
+                end
 				
                % memo
                power(r,c) = power(r,c)+vel(i);
@@ -88,12 +89,14 @@ for month = 12:12
         power(isnan(power)) = 0;
         power = power.*rho*A*Cp; % vel^3 to power
         power = power.*(10^-6); % cm^3 to m^3
+        power = power.*(10^-3); % W to kW
 			
         % plot power
         pcolor(X,Y,power);
         cmap = cbrewer2('YlGnBu',100);
         colormap(cmap);
         h=colorbar;
+        set(get(h,'title'),'string','kW');
         shading flat; axis image;
         xlabel('Longitude'); ylabel('Latitude');
         hold on
@@ -101,6 +104,8 @@ for month = 12:12
         % plot coastline
         contourf(bath_x,bath_y,depth,[0 0],'k','linewidth',1.3) 
         box on; grid on; set(gca, 'layer', 'top');  
+        date = [sprintf('%02d',month) '/' sprintf('%02d',day)];
+        title(date);
 
         % safe flies
         savename = ['dailypower_' sprintf('%02d',month) '_' sprintf('%02d',day)];
