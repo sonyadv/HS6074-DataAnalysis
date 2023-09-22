@@ -1,39 +1,17 @@
-就是資料分析ㄉ檔案存放區
-* Matlab 版本：R2022a／R2020b
+# 那個專題
 
-## HW1
+## 發電量
+* [x] 每個小時的Contour
 
-### Plot the following data defined by the three functions, and discuss their periodicity:
-* [x] $x(t) = 3sin4t + 2sin5t + sin6t$
-* [x] $x(t) = 3sint + 2sin\pi t + 2sin\sqrt{5}t$
-* [x] $x(t) = e^{-t}sint$
+![0915_0000_contour_hour](https://user-images.githubusercontent.com/28960431/231625948-ff4397b3-812f-49d3-bb8e-2047f36f8da2.png)
 
-### Data Visualization 
-* [x] Download ‘M_maps’ from web and draw the bathymetric map around Taiwan Island.
-* [x] Try to plot this map using finest resolution dataset with various projection setting.
-* [x] Check the content of ‘Codar_data.zip’
+* [ ] 每天(多個小時)的Contour
+    1. 對齊資料的方式要怎麼做
 
-## HW2
-### Taipd200m.xyz
-* [x] perp-processing
-* [x] plot
-* [x] plot with etopo1
-
-###  Codar_data
-* [x] plot
-
-## HW3
-### ocean current analysis(22.5-23°N,120-120.5°E)
-* [x] statistics variables(ex. range, IQR...)
-* [x] tide period
-
-## HW4
-### ocean current analysis
-* [x] 22.5-24°N,120-120.5°E(西岸、近岸)
-* [x] 22.5-24°N,119.5-120°E(西岸、遠岸)
-* [x] 22.5-24°N,121-121.5°E(東岸、近岸)
-* [x] 22.5-24°N,121.5-122°E(東岸、遠岸)
-* [x] 潮汐發電公式 
+* [ ] 調和分析
+    1. https://kml.deltares.nl/docs/OpenEarthHtmlDocs/blue/applications/tide/t_tide/t_tide.html#_top
+    2. https://www.sciencedirect.com/science/article/pii/S0098300402000134#aep-section-id10
+    
 
 
 
